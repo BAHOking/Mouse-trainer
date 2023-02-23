@@ -36,7 +36,7 @@ function createImg() {
   let img = document.createElement("img");
 
   img.alt = "bug";
-  img.src = `/images/${arrInsects[randomNumBeetle()]}.png`;
+  img.src = `images/${arrInsects[randomNumBeetle()]}.png`;
 
   cells[randomNumCell()].appendChild(img);
 }
