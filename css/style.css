@@ -1,0 +1,307 @@
+html {
+    box-sizing: border-box;
+    font-family: "Calculator", sans-serif;
+    font-size: 24px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    font-size: inherit;
+}
+
+ul[class] {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    color: #fff;
+}
+
+.container {
+    margin: 10px auto;
+    max-width: 1250px;
+}
+
+.btn__option-translation {
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 18px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.btn__menu {
+    display: flex;
+    justify-content: space-around;
+
+    width: 90%;
+    margin: 18% auto 0;
+}
+
+.btn__start,
+.btn__option {
+    width: 45%;
+    height: 170px;
+
+    font-size: 55px;
+    font-weight: 700;
+
+    background-color: rgb(135, 2, 224);
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0 0 5px 5px rgb(107, 6, 165);
+
+    transition: all 0.3s;
+}
+
+.btn__start:hover,
+.btn__option:hover {
+    color: #fff;
+    background: rgb(107, 6, 165);
+    box-shadow: 0 0 5px 5px rgba(162, 0, 255, 0.9);
+}
+
+.explanation__box {
+    display: none;
+    background-color: rgba(44, 0, 70, 0.9);
+    padding-bottom: 10px;
+}
+
+.explanation__items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.explanation__left,
+.explanation__right {
+    width: 45%;
+    margin: 20px auto;
+    padding: 5px;
+
+    border: 5px solid #000;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.9);
+
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 18px;
+
+    background-color: black;
+}
+
+.explanation__text-top--box {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 25px;
+}
+
+.explanation__fly,
+.explanation__mosquito,
+.explanation__bee,
+.explanation__caterpillar {
+    width: 25%;
+    height: 100%;
+    margin: auto;
+    margin-right: 50px;
+}
+
+.explanation__text-top--box .explanation__text {
+    margin: 18px auto;
+}
+
+.explanation__item-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.explanation__item-box .explanation__text {
+    width: 90%;
+    line-height: 30px;
+}
+
+.explanation__btn-ok,
+.game__end-btn--restart {
+    display: block;
+    width: 150px;
+
+    margin: 15px auto;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    background-color: rgb(135, 2, 224);
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0 0 5px 5px rgb(107, 6, 165);
+
+    transition: all 0.3s;
+}
+
+.explanation__btn-ok:hover,
+.game__end-btn--restart:hover {
+    color: #fff;
+    background: rgb(107, 6, 165);
+    box-shadow: 0 0 5px 5px rgba(162, 0, 255, 0.9);
+}
+
+.indicators {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+.point,
+.taymer,
+.point__best {
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 11px;
+}
+
+.taymer span {
+    font-size: 16px;
+    color: aqua;
+}
+
+.field__game-box {
+    display: none;
+    position: relative;
+}
+
+.field__game {
+    width: 652px;
+    height: 652px;
+
+    margin: -30px auto;
+
+    background: url(../images/tree.png) 0 0 no-repeat;
+    background-size: 652px 652px;
+}
+
+.game {
+    display: flex;
+    height: 125%;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell {
+    width: 150px;
+    height: 150px;
+}
+
+.game__end-box {
+    display: none;
+    width: 40%;
+    margin: 60px auto;
+    padding: 10px;
+    line-height: 30px;
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: rgba(44, 0, 70, 0.9);
+    box-shadow: 0 0 5px 5px rgb(107, 6, 165);
+}
+
+.game__end-btn--restart {
+    font-family: "Calculator", sans-serif;
+    font-size: 24px;
+}
+
+@media (max-width: 1140px) {
+    .btn__menu {
+        display: block;
+        margin: 14% auto 0;
+    }
+
+    .btn__start,
+    .btn__option {
+        display: block;
+        width: 60%;
+        margin: 20px auto;
+    }
+
+    .game__end-box {
+        width: 55%;
+    }
+}
+
+@media (max-width: 855px) {
+    .btn__start,
+    .btn__option {
+        font-size: 40px;
+    }
+
+    .explanation__left,
+    .explanation__right {
+        font-size: 14px;
+    }
+
+    .game__end-box {
+        width: 70%;
+    }
+}
+
+@media (max-width: 650px) {
+    .explanation__left,
+    .explanation__right {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 620px) {
+    .explanation__items {
+        display: block;
+    }
+
+    .explanation__left,
+    .explanation__right {
+        width: 90%;
+    }
+
+    .game__end-box {
+        width: 90%;
+    }
+}

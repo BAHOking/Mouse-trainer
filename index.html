@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse trainer</title>
+    <link href="https://fonts.cdnfonts.com/css/calculator" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body oncontextmenu="return false">
+    <section class="main__menu container">
+      <p class="btn__option-translation">*Як грати в цю гру</p>
+
+      <div class="btn__menu">
+        <button class="btn__start">Start</button>
+        <button class="btn__option">How to play the game*</button>
+      </div>
+    </section>
+
+    <section class="explanation__box container">
+      <div class="explanation__items">
+        <div class="explanation__left">
+          <div class="explanation__text-top--box">
+            <p class="explanation__text">
+              Your task is to catch insects with a computer mouse in the
+              shortest possible time.
+            </p>
+            <p class="explanation__text">
+              Each insect has a different approach:
+            </p>
+          </div>
+
+          <div class="explanation__item-box">
+            <img class="explanation__fly" src="/images/fly.png" alt="fly" />
+            <p class="explanation__text">
+              - Fly (you need to click on it with the "left mouse button")
+            </p>
+          </div>
+
+          <div class="explanation__item-box">
+            <img
+              class="explanation__mosquito"
+              src="/images/mosquito.png"
+              alt="mosquito"
+            />
+            <p class="explanation__text">
+              - Mosquito (you need to click on it twice with the "left mouse
+              button")
+            </p>
+          </div>
+
+          <div class="explanation__item-box">
+            <img
+              class="explanation__caterpillar"
+              src="/images/caterpillar.png"
+              alt="caterpillar"
+            />
+            <p class="explanation__text">
+              - Caterpillar (you need to drag it from the cage to another second
+              place with the "left mouse button")
+            </p>
+          </div>
+
+          <div class="explanation__item-box">
+            <img class="explanation__bee" src="/images/bee.png" alt="bee" />
+            <p class="explanation__text">
+              - Bumblebee (you need to click on it with the "right mouse
+              button")
+            </p>
+          </div>
+        </div>
+
+        <div class="explanation__right">
+          <div class="explanation__text-top--box">
+            <p class="explanation__text">
+              Ваше завдання - зловити комах комп'ютерною мишкою за найкоротший
+              час.
+            </p>
+            <p class="explanation__text">До кожної комахи свій підхід:</p>
+          </div>
+
+          <div class="explanation__item-box">
+            <img class="explanation__fly" src="/images/fly.png" alt="fly" />
+            <p class="explanation__text">
+              - Муха (на ній потрібно клацнути "лівою кнопкою мишки")
+            </p>
+          </div>
+
+          <div class="explanation__item-box">
+            <img
+              class="explanation__mosquito"
+              src="/images/mosquito.png"
+              alt="mosquito"
+            />
+            <p class="explanation__text">
+              - Комар (по ньому потрібно двічі клацнути "лівою кнопкою миші")
+            </p>
+          </div>
+
+          <div class="explanation__item-box">
+            <img
+              class="explanation__caterpillar"
+              src="/images/caterpillar.png"
+              alt="caterpillar"
+            />
+            <p class="explanation__text">
+              - Гусениця (її потрібно перетягнути з клітки на інше друге місце
+              "лівою кнопкою миші")
+            </p>
+          </div>
+
+          <div class="explanation__item-box">
+            <img class="explanation__bee" src="/images/bee.png" alt="bee" />
+            <p class="explanation__text">
+              - Джміль (на ньому потрібно клацнути "правою кнопкою миші")
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button class="explanation__btn-ok">Ok</button>
+    </section>
+
+    <section class="field__game-box container">
+      <div class="indicators">
+        <p class="point__best">Найкращий результат: <span>0</span></p>
+        <hr />
+        <p class="point">Результат: <span>0</span></p>
+        <hr />
+        <p class="taymer">Залишок часу: <span>30</span></p>
+      </div>
+
+      <div class="field__game">
+        <div class="game">
+          <div class="column__1">
+            <div class="cell"></div>
+            <div class="cell"></div>
+          </div>
+
+          <div class="column__2">
+            <div class="cell"></div>
+            <div class="cell"></div>
+          </div>
+
+          <div class="column__3">
+            <div class="cell"></div>
+            <div class="cell"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="game__end-box">
+      <p class="game__end-point">Ваш результат: <span>0</span></p>
+      <p class="game__end-best--point">
+        Ваш найкращий результат: <span>0</span>
+      </p>
+      <button class="game__end-btn--restart">Restart</button>
+    </section>
+    <script src="js/start_game.js"></script>
+    <script src="js/option.js"></script>
+  </body>
+</html>
