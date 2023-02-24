@@ -55,7 +55,7 @@ function randomNumBeetle() {
 
 game.addEventListener("click", function catchFly(event) {
   let img = event.target.closest("img");
-  if (img.src == "http://127.0.0.1:5500/images/fly.png") {
+  if (img.src == "images/fly.png") {
     img.remove();
     createImg();
     beetlesСaught();
@@ -64,7 +64,7 @@ game.addEventListener("click", function catchFly(event) {
 
 game.addEventListener("dblclick", function catchMosquito(event) {
   let img = event.target.closest("img");
-  if (img.src == "http://127.0.0.1:5500/images/mosquito.png") {
+  if (img.src == "images/mosquito.png") {
     img.remove();
     createImg();
     beetlesСaught();
@@ -73,7 +73,7 @@ game.addEventListener("dblclick", function catchMosquito(event) {
 
 game.addEventListener("contextmenu", function catchBee(event) {
   let img = event.target.closest("img");
-  if (img.src == "http://127.0.0.1:5500/images/bee.png") {
+  if (img.src == "images/bee.png") {
     img.remove();
     createImg();
     beetlesСaught();
@@ -82,7 +82,7 @@ game.addEventListener("contextmenu", function catchBee(event) {
 
 game.addEventListener("dragend", function catchCaterpillar(event) {
   let img = event.target.closest("img");
-  if (img.src == "http://127.0.0.1:5500/images/caterpillar.png") {
+  if (img.src == "images/caterpillar.png") {
     img.remove();
     createImg();
     beetlesСaught();
