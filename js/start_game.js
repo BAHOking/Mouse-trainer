@@ -113,15 +113,16 @@ function taymer() {
 }
 
 function endGame() {
-  if (points.innerHTML < beetlesСaughtNum) {
-    pointsBest.innerHTML = beetlesСaughtNum - 1;
+  if (points.innerHTML < beetlesСaughtNum && BestResult < beetlesСaughtNum) {
+    BestResult = beetlesСaughtNum - 1;
+    pointsBest.innerHTML = BestResult;
   }
 
   gameBox.style.display = "none";
   gameEndBox.style.display = "block";
 
   gameEndPoints.innerHTML = beetlesСaughtNum - 1;
-  gameEndBestPoints.innerHTML = pointsBest.innerHTML;
+  gameEndBestPoints.innerHTML = BestResult;
 }
 
 gameEndBtnRestart.addEventListener("click", function gameRestart() {
