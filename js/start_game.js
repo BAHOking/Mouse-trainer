@@ -128,7 +128,7 @@ function endGame() {
 gameEndBtnRestart.addEventListener("click", function gameRestart() {
   gameBox.style.display = "block";
   gameEndBox.style.display = "none";
-
+taymerSpan.style.color = "aqua";
   beetlesСaughtNum = 1;
   points.innerHTML = 0;
   taymerSpan.innerHTML = 30;
